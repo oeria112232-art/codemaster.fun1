@@ -1,15 +1,13 @@
 {
-    "name": "Code Mster - أفضل شركة حلول تقنية في العراق",
-    "short_name": "Code Mster",
+    "name": "code_master",
+    "short_name": "code_master",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#090D16",
-    "theme_color": "#3FD2FF",
-    "description": "شركة Code Mster للحلول البرمجية المتكاملة في العراق. تصميم تطبيقات، متاجر إلكترونية، أنظمة ERP، وبوابات دفع محلية.",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
-    "lang": "ar",
-    "dir": "rtl",
     "icons": [
         {
             "src": "icons/Icon-192.png",
