@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
   <script>
+    // Force unregister all service workers and clear cache storage to bust Flutter cache
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function(registrations) {
         for (let registration of registrations) {
@@ -17,53 +18,46 @@
       });
     }
   </script>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
   <base href="/">
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تصميم تطبيقات ومواقع في العراق | شركة Code Mster للحلول التقنية</title>
-  <meta name="description" content="Code Mster أفضل شركة حلول تقنية وتصميم تطبيقات في العراق. تصميم متجر إلكتروني، ERP، بوابات دفع محلية.">
-  <meta name="keywords" content="شركة حلول تقنية العراق, تصميم تطبيقات العراق, تصميم متجر إلكتروني, ERP العراق, زين كاش, آسيا حوالة">
-  <meta name="author" content="Code Mster">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://codemaster.fun/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://codemaster.fun/">
-  <meta property="og:title" content="تصميم تطبيقات ومواقع في العراق | شركة Code Mster">
-  <meta property="og:description" content="أفضل شركة حلول تقنية وتصميم تطبيقات في العراق.">
-  <meta property="og:image" content="https://codemaster.fun/assets/assets/cm-logo.png">
-  <meta property="og:locale" content="ar_IQ">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="geo.region" content="IQ-10">
-  <meta name="geo.placename" content="Al-Amarah, Maysan, Iraq">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="code_master">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>code_master</title>
   <link rel="manifest" href="manifest.json">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Code Mster",
-    "description": "أفضل شركة حلول تقنية وتصميم تطبيقات في العراق.",
-    "url": "https://codemaster.fun",
-    "logo": "https://codemaster.fun/assets/assets/cm-logo.png",
-    "telephone": "+964-777-163-2241",
-    "address": { "@type": "PostalAddress", "addressLocality": "Maysan", "addressCountry": "IQ" },
-    "geo": { "@type": "GeoCoordinates", "latitude": "31.8356", "longitude": "47.1457" },
-    "areaServed": { "@type": "Country", "name": "Iraq" },
-    "serviceType": ["تصميم تطبيقات الموبايل","تصميم متجر إلكتروني","برمجة نظام ERP","تصميم مواقع إلكترونية","ربط بوابات الدفع"],
-    "sameAs": ["https://t.me/codemaster6","https://wa.me/9647771632241"]
-  }
-  </script>
-  <script type="application/ld+json">
-  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-    { "@type": "Question", "name": "هل تدعم المتاجر طرق الدفع المحلية؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم. زين كاش، آسيا حوالة، وبطاقات الائتمان." } },
-    { "@type": "Question", "name": "ما الذي يجعل Code Mster الأفضل في العراق؟", "acceptedAnswer": { "@type": "Answer", "text": "حلول متكاملة مع استضافة فائقة السرعة ودعم 24/7." } }
-  ]}
-  </script>
 </head>
 <body>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
